@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 68722721d47661d4b8c26acffb6f304f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ChosenFigure: {instanceID: 0}
+  - ChosenTile: {instanceID: 0}
+  - CurrentTile: {instanceID: 0}
+  - hex_start: {instanceID: 0}
+  - hex_end: {instanceID: 0}
+  - NewMaterial: {fileID: 2100000, guid: 7128863445f4a5741af141f6a1939ca0, type: 2}
+  - DefaultMaterial: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

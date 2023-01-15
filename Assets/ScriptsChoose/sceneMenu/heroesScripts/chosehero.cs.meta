@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d2e77d72626b61d4a82a4690c1553d02
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - button: {instanceID: 0}
+  - button2: {instanceID: 0}
+  - t1: {instanceID: 0}
+  - t2: {instanceID: 0}
+  - t3: {instanceID: 0}
+  - Hero1: {fileID: 2492277279343163178, guid: 86edca429b71fe94392770dbf9ff2350, type: 3}
+  - PrefabHero1: {fileID: 2492277279343163178, guid: 20f0d50c871c9b748b5dd4673b67f33e, type: 3}
+  - Prefab1Hero1: {fileID: 2492277279343163178, guid: 3c87b0831272af84797054510a7d4280, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
