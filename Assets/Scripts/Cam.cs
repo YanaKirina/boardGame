@@ -24,14 +24,7 @@ public class Cam : MonoBehaviour
             mainCamera.enabled = !mainCamera.enabled;
             hoodCamera.enabled = !hoodCamera.enabled;
             FM = GetComponent<Figure_Movement>();
-            if (FM.whosTurn == "Player1Turn")
-            {
-                FM.whosTurn = "Player2Turn";
-            }
-            else
-            {
-                FM.whosTurn = "Player1Turn";
-            }
+            FM.Player1Turn = !FM.Player1Turn;
         }
     }
 }

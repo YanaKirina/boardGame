@@ -135,3 +135,5 @@ MonoBehaviour:
   - Lancer
   - Shooter
   Figure_Class: Shooter
+  IsKing: 0
+  Power: 12

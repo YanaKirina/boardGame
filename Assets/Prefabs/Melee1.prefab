@@ -135,3 +135,5 @@ MonoBehaviour:
   - Lancer
   - Shooter
   Figure_Class: Melee
+  IsKing: 0
+  Power: 12

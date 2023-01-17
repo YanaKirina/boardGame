@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,9 +11,7 @@ using static UnityEngine.UI.Image;
 public class Figure_Movement : MonoBehaviour
 {
     private Dictionary<int, GameObject> NumToFigure = new Dictionary<int, GameObject>();
-    
-    private Dictionary<string, string> PlayerToFigure = new Dictionary<string, string>();
-    
+
     private Outline outline;
 
     public GameObject Shooter, Lancer, Melee, Shooter1, Lancer1, Melee1;
@@ -28,13 +27,12 @@ public class Figure_Movement : MonoBehaviour
     public Material NewMaterial, DefaultMaterial;
 
     [Header("Player turn")]
-    public string whosTurn = "Player1Turn";
+    public bool Player1Turn;
     void Start()
     {
         outline = GetComponent<Outline>();
-
         SetToStartPositions();
-
+       
     }
     void SetToStartPositions()
     {
@@ -44,8 +42,7 @@ public class Figure_Movement : MonoBehaviour
         NumToFigure.Add(4, Lancer1);
         NumToFigure.Add(5, Melee1);
         NumToFigure.Add(6, Shooter1);
-        PlayerToFigure.Add("Player1Turn", "Player1Figure");
-        PlayerToFigure.Add("Player2Turn", "Player2Figure");
+        Player1Turn = true;
 
         Instantiate(NumToFigure[DataHolder.hero1]);
         Instantiate(NumToFigure[DataHolder.hero2]);
@@ -151,6 +148,11 @@ public class Figure_Movement : MonoBehaviour
         ChosenFigure = null;
         ChosenTile = null;
     }
+    void FigureAttack(GameObject GO1, GameObject GO2)
+    {
+        int Power1 = GO1.GetComponent<FigureScript>().Power;
+        int Power2 = GO2.GetComponent<FigureScript>().Power;
+    }
     void PlayerMove()
     {
         if (Input.GetMouseButtonDown(0))
@@ -160,19 +162,32 @@ public class Figure_Movement : MonoBehaviour
             bool hit = Physics.Raycast(ray, out hitInfo, 200);
             if (hit)
             {
-                if (hitInfo.transform.gameObject.CompareTag(PlayerToFigure[whosTurn]))
+                GameObject HitGO = hitInfo.transform.gameObject;
+                if (HitGO.CompareTag("Player1Figure") || HitGO.CompareTag("Player2Figure"))
                 {
-                    if (ChosenFigure == null)
+                    if ((ChosenFigure == null && HitGO.tag == "Player1Figure" && Player1Turn) || (ChosenFigure == null && HitGO.tag == "Player2Figure" && !Player1Turn))
                     {
-                        ChosenFigure = hitInfo.transform.gameObject;
+                        ChosenFigure = HitGO;
                         Figure_Chose();
                     }
+                    else if (ChosenFigure != null && HitGO.CompareTag(ChosenFigure.tag))
+                    {
+                        Debug.Log("Cannot move onto figure");
+                    }
+                    else if (ChosenFigure != null && !HitGO.CompareTag(ChosenFigure.tag))
+                    {
+                        FigureAttack(ChosenFigure, HitGO);
+                    }
+                    else
+                    {
+                        Debug.Log("It's not your turn!");
+                    }
                 }
-                else if (hitInfo.transform.gameObject.CompareTag("TilemapTile"))
+                else if (HitGO.CompareTag("TilemapTile"))
                 {
                     if (ChosenTile == null)
                     {
-                        ChosenTile = hitInfo.transform.gameObject;
+                        ChosenTile = HitGO;
                         TileScript tileS = ChosenTile.GetComponent<TileScript>();
                         if (ChosenFigure != null && tileS.isAvailable && !tileS.isHighGround)
                         {
