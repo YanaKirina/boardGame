@@ -150,8 +150,36 @@ public class Figure_Movement : MonoBehaviour
     }
     void FigureAttack(GameObject GO1, GameObject GO2)
     {
-        int Power1 = GO1.GetComponent<FigureScript>().Power;
-        int Power2 = GO2.GetComponent<FigureScript>().Power;
+        // int Power1 = GO1.GetComponent<FigureScript>().Power;
+        // int Power2 = GO2.GetComponent<FigureScript>().Power;
+        int Attacking = GO1.GetComponent<FigureScript>().Power;
+        int Suffering = GO1.GetComponent<FigureScript>().Power;
+
+        // int Attacking1 = 10; 
+        int Throws = Attacking / 4;
+        if (Attacking % 4 > 0){
+            Throws++;
+        }
+        // Debug.Log(Throws);
+
+        int[] Bone = new int[Throws];
+        int Damage = 0;
+
+        System.Random random = new System.Random();
+        for (int i = 0; i < Throws; i++){
+            Bone[i] = random.Next(1,12);
+
+            if (Bone[i] > 6){
+                Damage++;
+            }
+            Debug.Log(Bone[i]);
+        }
+        // Debug.Log(Damage);
+        Suffering -= Damage;
+        // Debug.Log(Suffering);
+
+
+
     }
     void PlayerMove()
     {
