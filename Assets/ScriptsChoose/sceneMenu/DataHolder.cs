@@ -1,4 +1,3 @@
-
 public static class DataHolder
 {
     public static int hero1;

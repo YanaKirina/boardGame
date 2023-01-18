@@ -46,6 +46,22 @@ public class Figure_Init : MonoBehaviour
             P2Figures[i].transform.position = pos;
             P2Figures[i].transform.rotation = rot;
         }
+        foreach (GameObject F in P1Figures)
+        {
+            if (F.GetComponent<FigureScript>().Figure_Class == DataHolder.king)
+            {
+                F.GetComponent<FigureScript>().IsKing = true;
+                break;
+            }
+        }
+        foreach (GameObject F in P2Figures)
+        {
+            if (F.GetComponent<FigureScript>().Figure_Class == DataHolder.king2)
+            {
+                F.GetComponent<FigureScript>().IsKing = true;
+                break;
+            }
+        }
     }
     void Start()
     {
@@ -69,8 +85,6 @@ public class Figure_Init : MonoBehaviour
 
         SetToStartPositions();
     }
-
-    // Update is called once per frame
     void Update()
     {
         P1Figures = GameObject.FindGameObjectsWithTag("Player1Figure");
