@@ -139,3 +139,5 @@ MonoBehaviour:
   Figure_Class: Lancer
   IsKing: 0
   Power: 12
+  MovementAP: 1
+  AttackAP: 1

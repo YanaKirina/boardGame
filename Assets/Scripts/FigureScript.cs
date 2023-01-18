@@ -8,6 +8,8 @@ public class FigureScript : MonoBehaviour
     public string Figure_Class;
     public bool IsKing;
     public int Power;
+    public bool MovementAP;
+    public bool AttackAP;
     // Start is called before the first frame update
     void Start()
     {
