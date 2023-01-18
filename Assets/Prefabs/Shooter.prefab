@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5442085003828646850}
   - component: {fileID: 5442085003828646851}
   - component: {fileID: 905584392335502741}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shooter
   m_TagString: Player1Figure
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8627292705096937561}
   m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.04, y: 0.13, z: -3.82}
+  m_LocalPosition: {x: 25, y: 0.13, z: -180}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -137,3 +137,5 @@ MonoBehaviour:
   Figure_Class: Shooter
   IsKing: 0
   Power: 12
+  MovementAP: 1
+  AttackAP: 1

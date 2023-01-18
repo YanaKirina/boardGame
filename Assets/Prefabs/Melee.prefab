@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4138882212712070910}
   - component: {fileID: 4138882212712070911}
   - component: {fileID: 3519951251595570435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Melee
   m_TagString: Player1Figure
   m_Icon: {fileID: 0}
@@ -137,3 +137,5 @@ MonoBehaviour:
   Figure_Class: Melee
   IsKing: 0
   Power: 12
+  MovementAP: 1
+  AttackAP: 1

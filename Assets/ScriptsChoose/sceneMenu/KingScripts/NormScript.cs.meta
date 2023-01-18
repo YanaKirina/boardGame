@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 80aaa9a5d5a844b49850a44e8465a776
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cam: {fileID: 5981962929043977539, guid: 6b6df493dd743ab4ba881ddf02f1f530, type: 3}
+  - cam2: {fileID: 5786849806869480023, guid: 224e424311c3d7441841ebbde5998d6f, type: 3}
+  - Melee: {fileID: 3837597012908426041, guid: 535e65460b8b9fa40b804b578edd5d1e, type: 3}
+  - Lancer: {fileID: 2492277279343163178, guid: d5bb528e8d8a30a4a851a9e243951e6f, type: 3}
+  - Shooter: {fileID: 5749659216435961759, guid: fa67f2529bb226643986bd4b3d24f8da, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

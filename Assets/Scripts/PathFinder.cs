@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -10,7 +9,7 @@ public class PathFinder : MonoBehaviour
     private GameObject hex_start, hex_end;
     GameObject[] BFS(GameObject hex_start, GameObject hex_end)
     {
-        if (GetComponent<Figure_Movement>().RangeCheck() != null)
+        if (GetComponent<Figure_Movement>().Movement_RangeCheck() != null)
         {
             hexs_queue.Enqueue(hex_start);
             hexs_visited.Add(hex_start);
@@ -22,7 +21,7 @@ public class PathFinder : MonoBehaviour
                     hexs_visited.Add(neighbor);
                 }
             }
-            foreach (Collider hex in GetComponent<Figure_Movement>().RangeCheck())
+            foreach (Collider hex in GetComponent<Figure_Movement>().Movement_RangeCheck())
             {
                 hexs_queue.Enqueue(hex.GetComponent<GameObject>());
             }
@@ -52,10 +51,10 @@ public class PathFinder : MonoBehaviour
         //gameObject Figure = Figure_Movement.GetComponent<ChosenFigure>();
         Collider[] hexs_around = Physics.OverlapSphere(Vector3.zero, 10, LayerMask.GetMask("Tilemap"));
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6564002525855175857}
   - component: {fileID: 6564002525855175856}
   - component: {fileID: 1161135101184034312}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lancer1
   m_TagString: Player2Figure
   m_Icon: {fileID: 0}
@@ -139,3 +139,5 @@ MonoBehaviour:
   Figure_Class: Lancer
   IsKing: 0
   Power: 12
+  MovementAP: 1
+  AttackAP: 1

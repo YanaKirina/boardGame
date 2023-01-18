@@ -11,9 +11,8 @@ public class choosehero1 : MonoBehaviour
     [Header("Set in inspector")]
     public UnityEngine.UI.Button button;
     public TextMeshProUGUI t1, t2, t3;
-    public GameObject Hero2, h2p1t1, h2p2t1, h2p3t1, h2p4t1, h2p5t1, h2p1t2, h2p2t2, h2p3t2, h2p4t2, h2p5t2;
+    public GameObject Hero2, Melee, Melee1;
     public int chekerClick;
-    public GameObject[] heroes2;
 
 
     private void Awake()
@@ -44,20 +43,19 @@ public class choosehero1 : MonoBehaviour
                 Hero2.transform.position = position;
                 Instantiate(Hero2);
 
-                Vector3 position1 = h2p1t1.transform.position;
+                Vector3 position1 = Melee.transform.position;
                 position1.x = 25;
                 position1.y = -20;
                 position1.z = -180;
-                h2p1t1.transform.position = position1;
-                Instantiate(h2p1t1);
+                Melee.transform.position = position1;
+                Instantiate(Melee);
                 if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 12)
                 {
-                    heroes2[0] = h2p1t1;
                     DataHolder.hero1 = 2;
                 }
                 else
                 {
-                    heroes2[0] = null;
+                    Debug.Log("Error");
                 }
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 11)
@@ -68,20 +66,19 @@ public class choosehero1 : MonoBehaviour
                 Hero2.transform.position = position;
                 Instantiate(Hero2);
 
-                Vector3 position1 = h2p2t1.transform.position;
+                Vector3 position1 = Melee.transform.position;
                 position1.x = 25;
                 position1.y = -20;
                 position1.z = -215;
-                h2p2t1.transform.position = position1;
-                Instantiate(h2p2t1);
+                Melee.transform.position = position1;
+                Instantiate(Melee);
                 if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 11)
-                {
-                    heroes2[1] = h2p2t1;
+                {;
                     DataHolder.hero2 = 2;
                 }
                 else
                 {
-                    heroes2[1] = null;
+                    Debug.Log("Error");
                 }
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 10)
@@ -92,20 +89,19 @@ public class choosehero1 : MonoBehaviour
                 Hero2.transform.position = position;
                 Instantiate(Hero2);
 
-                Vector3 position1 = h2p3t1.transform.position;
+                Vector3 position1 = Melee.transform.position;
                 position1.x = 25;
                 position1.y = -20;
                 position1.z = -250;
-                h2p3t1.transform.position = position1;
-                Instantiate(h2p3t1);
+                Melee.transform.position = position1;
+                Instantiate(Melee);
                 if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 10)
                 {
-                    heroes2[2] = h2p3t1;
                     DataHolder.hero3 = 2;
                 }
                 else
                 {
-                    heroes2[2] = null;
+                    Debug.Log("Error");
                 }
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 9)
@@ -116,20 +112,19 @@ public class choosehero1 : MonoBehaviour
                 Hero2.transform.position = position;
                 Instantiate(Hero2);
 
-                Vector3 position1 = h2p4t1.transform.position;
+                Vector3 position1 = Melee.transform.position;
                 position1.x = 25;
                 position1.y = -20;
                 position1.z = -285;
-                h2p4t1.transform.position = position1;
-                Instantiate(h2p4t1);
+                Melee.transform.position = position1;
+                Instantiate(Melee);
                 if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 9)
                 {
-                    heroes2[3] = h2p4t1;
                     DataHolder.hero4 = 2;
                 }
                 else
                 {
-                    heroes2[3] = null;
+                    Debug.Log("Error");
                 }
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 8)
@@ -140,20 +135,19 @@ public class choosehero1 : MonoBehaviour
                 Hero2.transform.position = position;
                 Instantiate(Hero2);
 
-                Vector3 position1 = h2p5t1.transform.position;
+                Vector3 position1 = Melee.transform.position;
                 position1.x = 25;
                 position1.y = -20;
                 position1.z = -320;
-                h2p5t1.transform.position = position1;
-                Instantiate(h2p5t1);
+                Melee.transform.position = position1;
+                Instantiate(Melee);
                 if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 8)
                 {
-                    heroes2[4] = h2p5t1;
                     DataHolder.hero5 = 2;
                 }
                 else
                 {
-                    heroes2[4] = null;   
+                    Debug.Log("Error");   
                 }
             }
             t2.text = Convert.ToString(Convert.ToInt32(t2.text) - 1);
@@ -168,12 +162,12 @@ public class choosehero1 : MonoBehaviour
                 Hero2.transform.position = position;
                 Instantiate(Hero2);
 
-                Vector3 position2 = h2p1t2.transform.position;
+                Vector3 position2 = Melee1.transform.position;
                 position2.x = -25;
                 position2.y = -20;
                 position2.z = -320;
-                h2p1t2.transform.position = position2;
-                Instantiate(h2p1t2);
+                Melee1.transform.position = position2;
+                Instantiate(Melee1);
                 DataHolder.hero1t2 = 5;
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 6)
@@ -184,12 +178,12 @@ public class choosehero1 : MonoBehaviour
                 Hero2.transform.position = position;
                 Instantiate(Hero2);
 
-                Vector3 position2 = h2p2t2.transform.position;
+                Vector3 position2 = Melee1.transform.position;
                 position2.x = -25;
                 position2.y = -20;
                 position2.z = -285;
-                h2p2t2.transform.position = position2;
-                Instantiate(h2p2t2);
+                Melee1.transform.position = position2;
+                Instantiate(Melee1);
                 DataHolder.hero2t2 = 5;
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 5)
@@ -200,12 +194,12 @@ public class choosehero1 : MonoBehaviour
                 Hero2.transform.position = position;
                 Instantiate(Hero2);
 
-                Vector3 position2 = h2p3t2.transform.position;
+                Vector3 position2 = Melee1.transform.position;
                 position2.x = -25;
                 position2.y = -20;
                 position2.z = -250;
-                h2p3t2.transform.position = position2;
-                Instantiate(h2p3t2);
+                Melee1.transform.position = position2;
+                Instantiate(Melee1);
                 DataHolder.hero3t2 = 5;
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 4)
@@ -216,12 +210,12 @@ public class choosehero1 : MonoBehaviour
                 Hero2.transform.position = position;
                 Instantiate(Hero2);
 
-                Vector3 position2 = h2p4t2.transform.position;
+                Vector3 position2 = Melee1.transform.position;
                 position2.x = -25;
                 position2.y = -20;
                 position2.z = -215;
-                h2p4t2.transform.position = position2;
-                Instantiate(h2p4t2);
+                Melee1.transform.position = position2;
+                Instantiate(Melee1);
                 DataHolder.hero4t2 = 5;
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 3)
@@ -232,12 +226,12 @@ public class choosehero1 : MonoBehaviour
                 Hero2.transform.position = position;
                 Instantiate(Hero2);
 
-                Vector3 position2 = h2p5t2.transform.position;
+                Vector3 position2 = Melee1.transform.position;
                 position2.x = -25;
                 position2.y = -20;
                 position2.z = -180;
-                h2p5t2.transform.position = position2;
-                Instantiate(h2p5t2);
+                Melee1.transform.position = position2;
+                Instantiate(Melee1);
                 DataHolder.hero5t2 = 5;
             }
             t2.text = Convert.ToString(Convert.ToInt32(t2.text) - 1);
