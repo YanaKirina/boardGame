@@ -1978,23 +1978,9 @@ MonoBehaviour:
   t2: {fileID: 494883739}
   t3: {fileID: 2077788570}
   Hero2: {fileID: 3837597012908426041, guid: 948ad6c176836b24aa1e162e63eff367, type: 3}
-  h2p1t1: {fileID: 3837597012908426041, guid: 4cfead61bb11a904bb099f61e2fe0c64, type: 3}
-  h2p2t1: {fileID: 3837597012908426041, guid: 8ba93bfe91b6ab64790042ddbe23026e, type: 3}
-  h2p3t1: {fileID: 3837597012908426041, guid: 454194e2b55fa0b45827c74bf7d4f919, type: 3}
-  h2p4t1: {fileID: 3837597012908426041, guid: 98466d57a08a8a74ba0efbfe56fafc14, type: 3}
-  h2p5t1: {fileID: 3837597012908426041, guid: 1661eb9bf0fd24b41b890f925ddd558c, type: 3}
-  h2p1t2: {fileID: 3837597012908426041, guid: 576bd62a3b150144c8b1e38e3e1f3c13, type: 3}
-  h2p2t2: {fileID: 3837597012908426041, guid: 47f64c406d1eaf642abb3a382350a65c, type: 3}
-  h2p3t2: {fileID: 3837597012908426041, guid: c1df52de480173a478b46dea78839080, type: 3}
-  h2p4t2: {fileID: 3837597012908426041, guid: 51e215d6eabb33a408e4eeee7df185fc, type: 3}
-  h2p5t2: {fileID: 3837597012908426041, guid: 0b4c74d8a88a965458396bd7022ae97b, type: 3}
+  Melee: {fileID: 3837597012908426041, guid: 535e65460b8b9fa40b804b578edd5d1e, type: 3}
+  Melee1: {fileID: 3837597012908426041, guid: cc8e2e82e6e371240b77dcc0eec64663, type: 3}
   chekerClick: 0
-  heroes2:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!65 &7981449395341691238
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2040,23 +2026,9 @@ MonoBehaviour:
   t2: {fileID: 494883739}
   t3: {fileID: 2077788570}
   Hero3: {fileID: 5749659216435961759, guid: 28ad0e59643944d4ba120ba879ec64ba, type: 3}
-  h3p1t1: {fileID: 5749659216435961759, guid: 379af05fb7e47c547ab477fba05651ab, type: 3}
-  h3p2t1: {fileID: 5749659216435961759, guid: 44537b3d45646f549ba8ca791df3451c, type: 3}
-  h3p3t1: {fileID: 5749659216435961759, guid: a3f12d257d9e89e4e81c89423adbb416, type: 3}
-  h3p4t1: {fileID: 5749659216435961759, guid: 611aa43bfe61e2a4da5543313b959514, type: 3}
-  h3p5t1: {fileID: 5749659216435961759, guid: dbb26096b86bd5848b72e5691d1c4284, type: 3}
-  h3p1t2: {fileID: 5749659216435961759, guid: 920d53d3f6e20814e9b1c8b0d0b8d4ec, type: 3}
-  h3p2t2: {fileID: 5749659216435961759, guid: cefdecd6a1585bc4c8f9e4d0040fc59c, type: 3}
-  h3p3t2: {fileID: 5749659216435961759, guid: 78178f36af4bdb74b870958fab470cda, type: 3}
-  h3p4t2: {fileID: 5749659216435961759, guid: 34bf5ce9a87c6044685a29e9cb6c7d48, type: 3}
-  h3p5t2: {fileID: 5749659216435961759, guid: bec98e99001b99848ae0a5bbf692f0cc, type: 3}
+  Shooter: {fileID: 5749659216435961759, guid: fa67f2529bb226643986bd4b3d24f8da, type: 3}
+  Shooter1: {fileID: 5749659216435961759, guid: d1791834ec8d822499dbb857be4c4959, type: 3}
   chekerClick: 0
-  heroes3:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!65 &8094084773428610472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2132,23 +2104,9 @@ MonoBehaviour:
   t2: {fileID: 494883739}
   t3: {fileID: 2077788570}
   Hero1: {fileID: 2492277279343163178, guid: 86edca429b71fe94392770dbf9ff2350, type: 3}
-  h1p1t1: {fileID: 2492277279343163178, guid: d9f827b7d508d8247a59f3972fa2b159, type: 3}
-  h1p2t1: {fileID: 2492277279343163178, guid: 217b98bc781be044cb0782d1fc3482a7, type: 3}
-  h1p3t1: {fileID: 2492277279343163178, guid: 2c235b650204f194eb02b4a05199cccf, type: 3}
-  h1p4t1: {fileID: 2492277279343163178, guid: fc8f3be33d5017a4d9870b66595b1ed7, type: 3}
-  h1p5t1: {fileID: 2492277279343163178, guid: 739249d7d5e414c40a55918c2ee8a939, type: 3}
-  h1p1t2: {fileID: 2492277279343163178, guid: e0c56ca118fb02c4ba9a6b6a92de52f9, type: 3}
-  h1p2t2: {fileID: 2492277279343163178, guid: e0e3c3f2c4a8b734a85fd76b10d98df8, type: 3}
-  h1p3t2: {fileID: 2492277279343163178, guid: e60518e359676194c80768a0b6d1eeb8, type: 3}
-  h1p4t2: {fileID: 2492277279343163178, guid: 63b1d4f8fdcaff44298ce375e356f3ac, type: 3}
-  h1p5t2: {fileID: 2492277279343163178, guid: aa378a0309016dd4f8756aa1243cd84d, type: 3}
+  Lancer: {fileID: 2492277279343163178, guid: d5bb528e8d8a30a4a851a9e243951e6f, type: 3}
+  Lancer1: {fileID: 2492277279343163178, guid: 0745e0ffed32bea43b87c17e06d0b82f, type: 3}
   chekerClick: 0
-  heroes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!65 &8236360765269933479
 BoxCollider:
   m_ObjectHideFlags: 0

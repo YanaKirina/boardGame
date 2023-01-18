@@ -7,6 +7,17 @@ TagManager:
   - Player1Figure
   - Player2Figure
   - TilemapTile
+  - t2
+  - t3
+  - t1
+  - cam
+  - cam2
+  - Lancer
+  - Melee
+  - Shooter
+  - Lancer1
+  - Melee1
+  - Shooter1
   layers:
   - Default
   - TransparentFX

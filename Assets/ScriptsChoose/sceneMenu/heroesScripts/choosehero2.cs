@@ -13,19 +13,8 @@ public class choosehero2 : MonoBehaviour
     public TextMeshProUGUI t1;
     public TextMeshProUGUI t2;
     public TextMeshProUGUI t3;
-    public GameObject Hero3;
-    public GameObject h3p1t1;
-    public GameObject h3p2t1;
-    public GameObject h3p3t1;
-    public GameObject h3p4t1;
-    public GameObject h3p5t1;
-    public GameObject h3p1t2;
-    public GameObject h3p2t2;
-    public GameObject h3p3t2;
-    public GameObject h3p4t2;
-    public GameObject h3p5t2;
+    public GameObject Hero3, Shooter, Shooter1;
     public int chekerClick;
-    public GameObject[] heroes3;
 
 
     private void Awake()
@@ -56,20 +45,19 @@ public class choosehero2 : MonoBehaviour
                 Hero3.transform.position = position;
                 Instantiate(Hero3);
 
-                Vector3 position1 = h3p1t1.transform.position;
+                Vector3 position1 = Shooter.transform.position;
                 position1.x = 25;
                 position1.y = -20;
                 position1.z = -180;
-                h3p1t1.transform.position = position1;
-                Instantiate(h3p1t1);
+                Shooter.transform.position = position1;
+                Instantiate(Shooter);
                 if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 12)
                 {
-                    heroes3[0] = h3p1t1;
                     DataHolder.hero1 = 3;
                 }
                 else
                 {
-                    heroes3[0] = null;
+                    Debug.Log("Error");
                 }
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 11)
@@ -80,20 +68,19 @@ public class choosehero2 : MonoBehaviour
                 Hero3.transform.position = position;
                 Instantiate(Hero3);
 
-                Vector3 position1 = h3p2t1.transform.position;
+                Vector3 position1 = Shooter.transform.position;
                 position1.x = 25;
                 position1.y = -20;
                 position1.z = -215;
-                h3p2t1.transform.position = position1;
-                Instantiate(h3p2t1);
+                Shooter.transform.position = position1;
+                Instantiate(Shooter);
                 if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 11)
                 {
-                    heroes3[1] = h3p2t1;
                     DataHolder.hero2 = 3;
                 }
                 else
                 {
-                    heroes3[1] = null;
+                    Debug.Log("Error");
                 }
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 10)
@@ -104,20 +91,19 @@ public class choosehero2 : MonoBehaviour
                 Hero3.transform.position = position;
                 Instantiate(Hero3);
 
-                Vector3 position1 = h3p3t1.transform.position;
+                Vector3 position1 = Shooter.transform.position;
                 position1.x = 25;
                 position1.y = -20;
                 position1.z = -250;
-                h3p3t1.transform.position = position1;
-                Instantiate(h3p3t1);
+                Shooter.transform.position = position1;
+                Instantiate(Shooter);
                 if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 10)
                 {
-                    heroes3[2] = h3p3t1;
                     DataHolder.hero3 = 3;
                 }
                 else
                 {
-                    heroes3[2] = null;
+                    Debug.Log("Error");
                 }
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 9)
@@ -128,20 +114,19 @@ public class choosehero2 : MonoBehaviour
                 Hero3.transform.position = position;
                 Instantiate(Hero3);
 
-                Vector3 position1 = h3p4t1.transform.position;
+                Vector3 position1 = Shooter.transform.position;
                 position1.x = 25;
                 position1.y = -20;
                 position1.z = -285;
-                h3p4t1.transform.position = position1;
-                Instantiate(h3p4t1);
+                Shooter.transform.position = position1;
+                Instantiate(Shooter);
                 if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 9)
                 {
-                    heroes3[3] = h3p4t1;
                     DataHolder.hero4 = 3;
                 }
                 else
                 {
-                    heroes3[3] = null;
+                    Debug.Log("Error");
                 }
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 8)
@@ -152,20 +137,19 @@ public class choosehero2 : MonoBehaviour
                 Hero3.transform.position = position;
                 Instantiate(Hero3);
 
-                Vector3 position1 = h3p5t1.transform.position;
+                Vector3 position1 = Shooter.transform.position;
                 position1.x = 25;
                 position1.y = -20;
                 position1.z = -320;
-                h3p5t1.transform.position = position1;
-                Instantiate(h3p5t1);
+                Shooter.transform.position = position1;
+                Instantiate(Shooter);
                 if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 8)
                 {
-                    heroes3[4] = h3p5t1;
                     DataHolder.hero5 = 3;
                 }
                 else
                 {
-                    heroes3[4] = null;
+                    Debug.Log("Error");
                 }
             }
             t3.text = Convert.ToString(Convert.ToInt32(t3.text) - 1);
@@ -180,12 +164,12 @@ public class choosehero2 : MonoBehaviour
                 Hero3.transform.position = position;
                 Instantiate(Hero3);
 
-                Vector3 position2 = h3p1t2.transform.position;
+                Vector3 position2 = Shooter1.transform.position;
                 position2.x = -25;
                 position2.y = -20;
                 position2.z = -320;
-                h3p1t2.transform.position = position2;
-                Instantiate(h3p1t2);
+                Shooter1.transform.position = position2;
+                Instantiate(Shooter1);
                 DataHolder.hero1t2 = 6;
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 6)
@@ -196,12 +180,12 @@ public class choosehero2 : MonoBehaviour
                 Hero3.transform.position = position;
                 Instantiate(Hero3);
 
-                Vector3 position2 = h3p2t2.transform.position;
+                Vector3 position2 = Shooter1.transform.position;
                 position2.x = -25;
                 position2.y = -20;
                 position2.z = -285;
-                h3p2t2.transform.position = position2;
-                Instantiate(h3p2t2);
+                Shooter1.transform.position = position2;
+                Instantiate(Shooter1);
                 DataHolder.hero2t2 = 6;
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 5)
@@ -212,12 +196,12 @@ public class choosehero2 : MonoBehaviour
                 Hero3.transform.position = position;
                 Instantiate(Hero3);
 
-                Vector3 position2 = h3p3t2.transform.position;
+                Vector3 position2 = Shooter1.transform.position;
                 position2.x = -25;
                 position2.y = -20;
                 position2.z = -250;
-                h3p3t2.transform.position = position2;
-                Instantiate(h3p3t2);
+                Shooter1.transform.position = position2;
+                Instantiate(Shooter1);
                 DataHolder.hero3t2 = 6;
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 4)
@@ -228,12 +212,12 @@ public class choosehero2 : MonoBehaviour
                 Hero3.transform.position = position;
                 Instantiate(Hero3);
 
-                Vector3 position2 = h3p4t2.transform.position;
+                Vector3 position2 = Shooter1.transform.position;
                 position2.x = -25;
                 position2.y = -20;
                 position2.z = -215;
-                h3p4t2.transform.position = position2;
-                Instantiate(h3p4t2);
+                Shooter1.transform.position = position2;
+                Instantiate(Shooter1);
                 DataHolder.hero4t2 = 6;
             }
             if (Convert.ToInt32(t1.text) + Convert.ToInt32(t2.text) + Convert.ToInt32(t3.text) == 3)
@@ -244,12 +228,12 @@ public class choosehero2 : MonoBehaviour
                 Hero3.transform.position = position;
                 Instantiate(Hero3);
 
-                Vector3 position2 = h3p5t2.transform.position;
+                Vector3 position2 = Shooter1.transform.position;
                 position2.x = -25;
                 position2.y = -20;
                 position2.z = -180;
-                h3p5t2.transform.position = position2;
-                Instantiate(h3p5t2);
+                Shooter1.transform.position = position2;
+                Instantiate(Shooter1);
                 DataHolder.hero5t2 = 6;
             }
             t3.text = Convert.ToString(Convert.ToInt32(t3.text) - 1);

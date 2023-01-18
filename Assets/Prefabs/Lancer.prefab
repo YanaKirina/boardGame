@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7973488557822890128}
   m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.52, y: 0.13, z: -3.09}
+  m_LocalPosition: {x: 25, y: 0.13, z: -215}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -139,5 +139,3 @@ MonoBehaviour:
   Figure_Class: Lancer
   IsKing: 0
   Power: 12
-  MovementAP: 1
-  AttackAP: 1
