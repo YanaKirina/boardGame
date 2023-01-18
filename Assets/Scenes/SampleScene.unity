@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 963194231}
   - component: {fileID: 963194232}
   - component: {fileID: 963194233}
+  - component: {fileID: 963194234}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -642,18 +643,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68722721d47661d4b8c26acffb6f304f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shooter: {fileID: 8627292705096937561, guid: 4b73d29d07d9a4743ba40bdf1ba3d64a, type: 3}
-  Lancer: {fileID: 7973488557822890128, guid: 551680d2fb41d0b4080d4f177185010b, type: 3}
-  Melee: {fileID: 1806977817870914693, guid: 3d97262e3affe2246a9ad89541e9c678, type: 3}
-  Shooter1: {fileID: 8627292705096937561, guid: c7cdf0d7496583f4898ae1564d0bc32a, type: 3}
-  Lancer1: {fileID: 7973488557822890128, guid: 1c4ce04da5eeef74190bf4b1b20fa95f, type: 3}
-  Melee1: {fileID: 1806977817870914693, guid: 3751a821838d2dd408c2e5afaa2d6a4b, type: 3}
   ChosenFigure: {fileID: 0}
   ChosenTile: {fileID: 0}
   CurrentTile: {fileID: 0}
   hex_start: {fileID: 0}
   hex_end: {fileID: 0}
-  Grid: {fileID: 918414856}
   Radius: 13
   NewMaterial: {fileID: 2100000, guid: 7128863445f4a5741af141f6a1939ca0, type: 2}
   DefaultMaterial: {fileID: 2100000, guid: 86572ae6121dd124797c0a8b379fcee6, type: 2}
@@ -720,6 +714,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3d790afefd139842bf40552ca91f882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &963194234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e2fd771bb59133499bce5d704e8fa2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  P1Figures: []
+  P2Figures: []
+  Grid: {fileID: 593522691}
+  Shooter: {fileID: 8627292705096937561, guid: 4b73d29d07d9a4743ba40bdf1ba3d64a, type: 3}
+  Lancer: {fileID: 7973488557822890128, guid: 551680d2fb41d0b4080d4f177185010b, type: 3}
+  Melee: {fileID: 1806977817870914693, guid: 3d97262e3affe2246a9ad89541e9c678, type: 3}
+  Shooter1: {fileID: 8627292705096937561, guid: c7cdf0d7496583f4898ae1564d0bc32a, type: 3}
+  Lancer1: {fileID: 7973488557822890128, guid: 1c4ce04da5eeef74190bf4b1b20fa95f, type: 3}
+  Melee1: {fileID: 1806977817870914693, guid: 3751a821838d2dd408c2e5afaa2d6a4b, type: 3}
 --- !u!1 &2007420013
 GameObject:
   m_ObjectHideFlags: 0
