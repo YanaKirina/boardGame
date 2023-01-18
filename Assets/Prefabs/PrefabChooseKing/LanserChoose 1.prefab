@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7973488557822890128
+--- !u!1 &2492277279343163178
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5495681702884669336}
-  - component: {fileID: 6564002525855175855}
-  - component: {fileID: 8089044911465484974}
-  - component: {fileID: 6564002525855175857}
-  - component: {fileID: 6564002525855175856}
-  - component: {fileID: 1161135101184034312}
+  - component: {fileID: 33011763882987554}
+  - component: {fileID: 1669103623616279317}
+  - component: {fileID: 4356056296269460756}
+  - component: {fileID: 2378288568841320789}
+  - component: {fileID: 2833992465165083308}
   m_Layer: 0
-  m_Name: Lancer1
-  m_TagString: Player2Figure
+  m_Name: LanserChoose 1
+  m_TagString: Lancer1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5495681702884669336
+--- !u!4 &33011763882987554
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7973488557822890128}
-  m_LocalRotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.52, y: 0.13, z: -3.09}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_ConstrainProportionsScale: 0
+  m_GameObject: {fileID: 2492277279343163178}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -25, y: -20, z: -285}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6564002525855175855
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!33 &1669103623616279317
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7973488557822890128}
+  m_GameObject: {fileID: 2492277279343163178}
   m_Mesh: {fileID: 7763563024395437530, guid: 48bd36c0476c63743b0fbac612bc19ac, type: 3}
---- !u!23 &8089044911465484974
+--- !u!23 &4356056296269460756
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7973488557822890128}
+  m_GameObject: {fileID: 2492277279343163178}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -88,56 +87,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6564002525855175857
-MonoBehaviour:
+--- !u!65 &2378288568841320789
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7973488557822890128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!64 &6564002525855175856
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7973488557822890128}
+  m_GameObject: {fileID: 2492277279343163178}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7763563024395437530, guid: 48bd36c0476c63743b0fbac612bc19ac, type: 3}
---- !u!114 &1161135101184034312
+  serializedVersion: 2
+  m_Size: {x: 35.411007, y: 38.846848, z: 32.243202}
+  m_Center: {x: -0.3712368, y: 19.42052, z: -0.1702795}
+--- !u!114 &2833992465165083308
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7973488557822890128}
+  m_GameObject: {fileID: 2492277279343163178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47ba1eb695580b5418bdc0a398ddb44c, type: 3}
+  m_Script: {fileID: 11500000, guid: 80aaa9a5d5a844b49850a44e8465a776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  figClasses:
-  - Melee
-  - Lancer
-  - Shooter
-  Figure_Class: Lancer
-  IsKing: 0
-  Power: 12
-  MovementAP: 1
-  AttackAP: 1
+  king: 0
+  cam: {fileID: 5981962929043977539, guid: 6b6df493dd743ab4ba881ddf02f1f530, type: 3}
+  cam2: {fileID: 5786849806869480023, guid: 224e424311c3d7441841ebbde5998d6f, type: 3}
+  Melee: {fileID: 3837597012908426041, guid: 535e65460b8b9fa40b804b578edd5d1e, type: 3}
+  Lancer: {fileID: 2492277279343163178, guid: d5bb528e8d8a30a4a851a9e243951e6f, type: 3}
+  Shooter: {fileID: 5749659216435961759, guid: fa67f2529bb226643986bd4b3d24f8da, type: 3}
